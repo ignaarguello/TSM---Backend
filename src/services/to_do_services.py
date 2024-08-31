@@ -19,6 +19,6 @@ def create_to_do_service():
             "type": type,
             "done": False,
         }
-        return result
+        return f"Task Created, {result}"
     else:
         return "Invalid Payload", 400
