@@ -1,5 +1,3 @@
-from crypt import methods
-import imp
 from flask import Blueprint
 
 # Importacion del Archivo Service
