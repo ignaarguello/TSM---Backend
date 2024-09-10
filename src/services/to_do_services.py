@@ -1,6 +1,6 @@
 # Importaciones
 from flask import request, Response
-from config.mongodb import mongo
+from src.config.mongodb import mongo
 from bson import json_util, ObjectId
 
 
