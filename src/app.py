@@ -16,6 +16,7 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo.init_app(app)
 
 
+
 # Ruta principal de la aplicacion
 @app.route("/")
 def index():
