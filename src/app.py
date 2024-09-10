@@ -3,12 +3,14 @@ from routes.to_do import to_do
 from dotenv import load_dotenv
 import os
 from config.mongodb import mongo
+from flask_cors import CORS
 
 # Carga de Dotenv
 load_dotenv()
 
 # Instancia de Flask
 app = Flask(__name__)
+CORS(app)
 
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo.init_app(app)
