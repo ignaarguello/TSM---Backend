@@ -1,0 +1,12 @@
+[buildSystem]
+  buildCommand = "pip install -r requirements.txt"
+
+[runtime]
+   startCommand = "gunicorn src.app:app"
+
+[environment]
+  FLASK_APP = "app"
+  FLASK_ENV = "production"  # Cambia a "production" para el entorno de producción
+
+[dependencies]
+  python = "3.10"  # Ajusta según tu versión de Python
