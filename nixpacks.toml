@@ -2,7 +2,7 @@
   buildCommand = "pip install -r requirements.txt"
 
 [runtime]
-   startCommand = "gunicorn src.app:app"
+   startCommand = "gunicorn app:app"
 
 [environment]
   FLASK_APP = "app"
